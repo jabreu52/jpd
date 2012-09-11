@@ -1,0 +1,28 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<ul class="nav">
+			
+			<li class="<%= home? ? "active" : nil %>"><%= link_to "Home", root_path %></li>
+			
+			<li class="divider-vertical"></li>
+			
+			<li class="<%= eventos? ? "active" : nil %>"><%= link_to "Eventos", eventos_path %></li>
+			
+			<li class="divider-vertical"></li>
+			
+			<li class="<%= directiva? ? "active" : nil %>"><%= link_to "Directiva", directiva_path %></li>
+			
+			<li class="divider-vertical"></li>
+			
+			<li class="<%= inauguracion? ? "active" : nil %>"><%= link_to "Inauguración", inauguracion_path %></li>
+			
+			<li class="divider-vertical"></li>
+			
+			<li class="<%= donacion? ? "active" : nil %>"><%= link_to "Donaciones", donacion_path %></li>
+			
+			<li class="divider-vertical"></li>
+			
+			<li class="<%= enlaces? ? "active" : nil %>"><%= link_to "Enlaces", enlaces_path %></li>											
+		</ul>
+	</div>
+</div>

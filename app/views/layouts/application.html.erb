@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jpd</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+	<style type="text/css" media="screen">
+		.title { color: #666; }
+		.memorial { float: left; width: 100px; }
+		.donate { text-align: center; }
+		.text-info { font-weight: bold; font-size: 15px; color: #003366; }
+		.navbar .nav { margin: 0; }
+		.navbar .nav > li > a { padding-left: 27px; padding-right: 27px; }
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span9">
+				
+				<!-- Title -->
+				<%= image_tag "header.png" %>
+				<%= render "navigation" %>
+				
+				<div class="row">
+					<div class="span3">
+						<%= render "left_column" %>
+					</div>
+					<div class="span6">
+						<%= render "title" %>
+						<%= yield %>
+					</div>
+				</div>
+				<div class="footer">Monumento Juan Pablo Duarte</div>
+			
+			
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
