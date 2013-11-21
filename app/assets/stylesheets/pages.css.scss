@@ -10,4 +10,4 @@ h1 { font-weight: 200; padding: 10px 0; }
 .navbar-inner { padding: 0; margin-right: 2px; @include border-radius(0 0 4px 4px); }
 .navbar .divider-vertical { margin: 0; }
 
-.footer { color: #FFF; font-weight: bold; padding: 5px 10px; margin-bottom: 20px; text-align: right; background: #003366; @include border-radius(4px); }
+.footer { color: #FFF; font-weight: bold; padding: 5px 10px; margin-bottom: 20px; text-align: right; background: #003366; @include border-radius(0 0 3px 3px); }
